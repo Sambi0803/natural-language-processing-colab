@@ -16,7 +16,7 @@ def setup_common():
     os.system("mkdir common")
     os.system("mv requirements_colab.txt download_utils.py tqdm_utils.py __init__.py common/")
 
-    os.system("pip install -r commmon/requirements_colab.txt")
+    os.system("pip install -r common/requirements_colab.txt")
 
 
 def setup_starspace():
