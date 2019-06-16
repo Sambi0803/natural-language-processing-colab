@@ -10,13 +10,13 @@ def download_github_code(path):
 
 def setup_common():
     download_github_code("common/requirements_colab.txt")
-    os.system("pip install -r commmon/requirements_colab.txt")
-
     download_github_code("common/download_utils.py")
     download_github_code("common/tqdm_utils.py")
     download_github_code("common/__init__.py")
     os.system("mkdir common")
-    os.system("mv download_utils.py tqdm_utils.py __init__.py common/")
+    os.system("mv requirements_colab.txt download_utils.py tqdm_utils.py __init__.py common/")
+
+    os.system("pip install -r commmon/requirements_colab.txt")
 
 
 def setup_starspace():
