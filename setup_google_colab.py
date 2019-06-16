@@ -5,22 +5,11 @@ import os
 
 def download_github_code(path):
     filename = path.rsplit("/")[-1]
-    os.system("wget https://raw.githubusercontent.com/hse-aml/natural-language-processing/master/{} -O {}".format(path, filename))
+    os.system("wget https://raw.githubusercontent.com/AVBelyy/natural-language-processing/master/{} -O {}".format(path, filename))
 
 
 def setup_common():
-    os.system("pip install tqdm")
-    os.system("pip install backports.weakref==1.0.post1")
-    os.system("pip install ChatterBot==0.7.6")
-    os.system("pip install enum34==1.1.6")
-    os.system("pip install funcsigs==1.0.2")
-    os.system("pip install gensim==3.1.0")
-    os.system("pip install jedi==0.11.0")
-    os.system("pip install libarchive==0.4.4")
-    os.system("pip install mock==2.0.0")
-    os.system("pip install parso==0.1.0")
-    os.system("pip install pbr==3.1.1")
-    os.system("pip install regex==2017.11.9")
+    os.system("pip install -r commmon/requirements_colab.txt")
 
     download_github_code("common/download_utils.py")
     download_github_code("common/tqdm_utils.py")
