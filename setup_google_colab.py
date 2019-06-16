@@ -9,6 +9,7 @@ def download_github_code(path):
 
 
 def setup_common():
+    download_github_code("common/requirements_colab.txt")
     os.system("pip install -r commmon/requirements_colab.txt")
 
     download_github_code("common/download_utils.py")
