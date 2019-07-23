@@ -13,7 +13,7 @@ def setup_common():
     download_github_code("common/download_utils.py")
     download_github_code("common/tqdm_utils.py")
     download_github_code("common/__init__.py")
-    os.system("mkdir common")
+    os.system("mkdir common docker")
     os.system("mv download_utils.py tqdm_utils.py __init__.py common/")
     os.system("mv requirements.txt docker/")
 
