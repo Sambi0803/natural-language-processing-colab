@@ -9,7 +9,7 @@ def download_github_code(path):
 
 
 def setup_common():
-    download_github_code("common/requirements_colab.txt")
+    download_github_code("docker/requirements.txt")
     download_github_code("common/download_utils.py")
     download_github_code("common/tqdm_utils.py")
     download_github_code("common/__init__.py")
