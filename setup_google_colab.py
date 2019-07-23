@@ -14,9 +14,10 @@ def setup_common():
     download_github_code("common/tqdm_utils.py")
     download_github_code("common/__init__.py")
     os.system("mkdir common")
-    os.system("mv requirements_colab.txt download_utils.py tqdm_utils.py __init__.py common/")
+    os.system("mv download_utils.py tqdm_utils.py __init__.py common/")
+    os.system("mv requirements.txt docker/")
 
-    os.system("pip install -r common/requirements_colab.txt --force-reinstall")
+    os.system("pip install -r docker/requirements.txt --force-reinstall")
 
 
 def setup_starspace():
